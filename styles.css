@@ -1,0 +1,94 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(140, 123, 156);
+    background: linear-gradient(0deg, rgba(140, 123, 156, 1) 0%, rgba(9, 45, 76, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #E6E6E6;
+    height: 100%;
+
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    bottom: 50px;
+}
+
+.javascript-logo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #f7df1e;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: auto;
+    min-width: 100px;
+    /* Ajusta el ancho máximo de los cuadros */
+    justify-content: space-between;
+    /* Espaciado entre los cuadros */
+    padding: 5vh;
+}
+
+.box {
+
+    width: calc(33.33% - 100px);
+    /* Ancho de los cuadros (33.33% del contenedor con espaciado) */
+    height: 25vh;
+    /* Altura de los cuadros */
+    background-color: #808080;
+    /* Color de fondo de los cuadros */
+    border: 1px solid #000;
+    /* Borde de los cuadros (opcional) */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 2rem 1rem;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        flex: 0 0 45%;
+        /* Ajusta este valor para cambiar el tamaño de las imágenes en pantallas más pequeñas */
+        max-width: 45%;
+        /* Ajusta este valor para cambiar el tamaño máximo de las imágenes en pantallas más pequeñas */
+    }
+
+}
+
+.icon-info {
+    display: flex;
+    position: fixed;
+    right: 5vh;
+    margin: 0;
+    top: 15px;
+    /* Ajusta esta distancia desde arriba */
+    transition: transform 0.5s;
+}
+
+.icon-return {
+    display: flex;
+    position: absolute;
+}
+
+.icon-info:hover {
+    transform: rotate(360deg);
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
